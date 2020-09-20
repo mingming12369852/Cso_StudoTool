@@ -37,13 +37,11 @@ Gui Add, CheckBox, x16 y336 w144 h23 +Disabled     , F`% 一鍵射擊 音效
 Gui Show, w343 h503, Cso StudioTool v0.3.04
 Return
 
-
 ; Function 
 Function_V6(status){
     if (status = "on") {
         while TRUE {
             Send, v6
-            Sleep % 80
         }
     }
 }
@@ -68,10 +66,7 @@ Return
 
 F5::Function_V6(status:="on")
 
-F6::
-Reload
-Mouse_m1(status:="on")
-Return
+F6::Mouse_m1(status:="on")
 
 ; ---------------
 ; ---------------
